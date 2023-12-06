@@ -9,7 +9,7 @@ dotenv.config();
 const connection = new Sequelize({
   dialect: "mysql",
   host: process.env.HOST,
-  username: 'root',
+  username: process.env.USERNAME,
   password: process.env.PASSWORD,
   database: process.env.DB,
   logging: false,

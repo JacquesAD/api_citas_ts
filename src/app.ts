@@ -21,7 +21,7 @@ app.use('/pacientes', pacienteRouter);
 app.use('/citas', citaRouter);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get("/", (req: express.Request, res: express.Response) => {
-  res.send("Welcome! Go to /api-docs to see documentation");
+  res.send("Bienvenido! Diríjase a /api-docs para ver la documentación");
 })
 
 app.use((req: express.Request, res: express.Response) => {
